@@ -32,7 +32,7 @@
     ]
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^13.4.19",
+    "@next/eslint-plugin-next": "^14.0.4",
     "@types/bcryptjs": "^2.4.4",
     "@types/jest": "^29.5.2",
     "@types/supertest": "^2.0.12",
