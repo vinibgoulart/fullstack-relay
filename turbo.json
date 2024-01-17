@@ -1,0 +1,30 @@
+{
+  "pipeline": {
+    "build": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "dev": {
+      "cache": false
+    },
+    "lint": {
+      "outputs": []
+    },
+    "lint-staged": {
+      "*.{js,ts,tsx}": [
+        "yarn prettier",
+        "eslint --cache --fix",
+        "yarn i18n:scan"
+      ],
+      "*.yml": ["prettier --write"]
+    },
+    "relay": {
+      "cache": false
+    },
+    "relay:web": {
+      "cache": false,
+      "dependsOn": ["relay"]
+    }
+  }
+}

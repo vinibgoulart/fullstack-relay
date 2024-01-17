@@ -1,0 +1,23 @@
+{
+  "name": "@fullstack-relay/session",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "generate:component": "turbo gen react-component"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.3",
+    "tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@fullstack-relay/graphql": "workspace:*",
+    "@fullstack-relay/types": "workspace:*",
+    "@fullstack-relay/config": "workspace:*",
+    "@fullstack-relay/core": "workspace:*",
+    "@fullstack-relay/user": "workspace:*",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
